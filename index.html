@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Poppins:wght@500&display=swap">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <img src="Logo.png" alt="Your Logo">
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </nav>
+
+    <div class="button-container">
+      <button id="showLoginForm" id="login-button">Log in</button>
+      <button id="showSignupForm">Sign up</button>
+    </div>
+
+  </header>
+
+
+  <!-- Landing page content -->
+  <main>
+    <!-- Image -->
+    <img src="boy.jpg" alt="Main Image">
+  
+    <div class="mainhead">
+      <h1 class="mainheader">If you want Learn <a href="#" id="Journey">Web Development</a><br> then Feel Free to <a href="#" id="Journey">Contact Me</a></h1>
+     <button id="showLoginForm">Get start &#10132;</button>
+    </div>
+  </main>
+
+
+  <!-- Signup Form -->
+  <div class="signup-container" id="signup-container">
+  <div id="signupFormContainer" style="display: none;" class="signform-container">
+    
+    <!-- board -->
+    <div class="board">
+    <div class="board-back">
+      <div class="board-details">
+       <!-- <h3>START FOR FREE</h3> -->
+       <h1>Data<span><img src="img2.jpg" alt="" class="showdataimg"> </span>Interchange</h1>
+       <p>Welcome to data interchange professional e-invoicing portal</p>
+
+      </div>
+    </div>
+    </div> 
+
+    <!-- Your signup form fields code here -->
+    <div class="centersignform">
+     <!-- <form id="signupForm">
+      <h2>Create your Account</h2>
+      <div class="signflhorizontal">
+       <div>
+         <label for="firstName" id="lablemargin">First Name</label>
+         <input type="text" id="firstName" placeholder="Enter your first name" required>
+       </div>
+       <div>
+         <label for="lastName" id="lablemargin">Last Name</label>
+         <input type="text" id="lastName" placeholder="Enter your last name" required>
+       </div>
+      </div>
+      <div>
+        <label for="email" id="lablemargin">Your email address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <label for="password" id="lablemargin">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <div>
+        <label for="password" id="lablemargin">Confirm Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <div>
+        <input type="checkbox" id="rememberMe">
+        <label for="rememberMe">Remember me</label>
+       </div>
+      <div>
+        <button type="submit">Create new account</button>
+        <p class="alamlink">Already have an account? <a href="#" id="showLoginFormLink">Sign in</a></p>
+        <br>
+        <p class="alamlink2">By clicking Sign Up you Agree to the<a href="#" id="showLoginFormLink">Terms & Privacy Policy</a></p>
+      </div>
+     </form> -->
+     <div class="container">
+      <form id="form" class="form">
+        <h2>Create Your Acccount</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input type="password" id="password2" placeholder="Enter password again" />
+          <small>Error Message</small>
+        </div>
+        <div>
+          <input type="checkbox" id="rememberMe">
+          <label for="rememberMe">Remember me</label>
+         </div>
+        <div>
+          <button type="submit">Create new account</button>
+          <p class="alamlink">Already have an account? <a href="#" id="showLoginFormLink">Sign in</a></p>
+          <br>
+          <p class="alamlink2">By clicking Sign Up you Agree to the<a href="#" id="showLoginFormLink">Terms & Privacy Policy</a></p>
+        </div>
+      </form>
+      <!-- <div class="container2">
+        <div id="thank-you" class="thank-you">
+          <h2>Thank You!</h2>
+          <p>Your submission has been received.</p>
+        </div> -->
+    </div>
+    </div>
+    <div class="cut-button" id="signupCutButton">&#10005;</div>
+  </div>
+</div>
+
+  <!-- Login Form -->
+  <div class="login-container" id="login-container">
+  <div id="loginFormContainer" style="display: none;" class="form-container">
+    <form id="loginForm">
+      <!-- Your login form code here -->
+      <h2>Welcome back, Shazaib</h2>
+
+      <div class="lablebottom">
+        <label for="loginEmail" id="lablemargin">Email</label>
+        <input type="email" id="loginEmail"  required>
+      </div>
+      <div class="fieldanimation">
+        <label for="loginPassword" id="lablemargin">Password</label>
+        <input type="password" id="loginPassword" required>
+      </div>
+
+
+      <div class="rememerandforgot">
+        <div>
+         <input type="checkbox" id="rememberMe">
+         <label for="rememberMe">Remember me</label>
+        </div>
+        <div class="fpcolor">
+         <p>Forgot password?</p>
+        </div>
+      </div>
+      <div class="loginsub-animation">
+        <button type="submit">Log in</button>
+      </div>
+      <div class="or-separator">
+        <div class="or-line"></div>
+        <p class="or-text">Or</p>
+        <div class="or-line"></div>
+      </div>
+      <div>
+        <button id="loginWithGoogle">
+            <img src="google-logo.svg" alt="Google Logo" class="google-logo">
+            <span class="button-text">Log in with Google</span>
+        </button>
+      </div>
+      <div class="dhave-animation">
+        <p class="dhaccount">Don't have an account? <a href="#" id="showSignupFormLink">Sign up for free</a></p>
+      </div>
+      <div class="cut-button" id="loginCutButton">&#10005;</div>
+    </form>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
